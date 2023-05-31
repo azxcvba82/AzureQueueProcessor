@@ -27,7 +27,7 @@ func main() {
 					return
 				}
 				go func() {
-					p := processor.NewWeatherforecastProcessor(req)
+					p := processor.NewCurrencyConversionSyncProcessor(req)
 					p.Start(p)
 				}()
 			}

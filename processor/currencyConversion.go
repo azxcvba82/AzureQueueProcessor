@@ -9,7 +9,7 @@ type CurrencyConversionSync struct {
 	*AbstractProcessor
 }
 
-func NewWeatherforecastProcessor(queueRequest QueueRequest) *CurrencyConversionSync {
+func NewCurrencyConversionSyncProcessor(queueRequest QueueRequest) *CurrencyConversionSync {
 	p := NewAbstractProcessor(queueRequest)
 	return &CurrencyConversionSync{AbstractProcessor: p}
 }
